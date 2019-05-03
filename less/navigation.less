@@ -1,5 +1,6 @@
 // Navigation code here
 .navigation {
+    margin: 0 auto;
     background-color: @wild-sand;
     .desktop-width();
     display: flex;
@@ -32,4 +33,14 @@ margin-bottom: 5px;
             }
         }
     }
+@media @mobile {
+    position: fixed;
+    top:0px;
+    opacity: .6;
+    transition-duration: 10s;
+    &:hover{
+        opacity: 1;
+        transition-duration: 0.5s;
+    }
+}
 }

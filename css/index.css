@@ -196,6 +196,18 @@ p {
   font-size: 24px;
   transition-duration: 0.3s;
 }
+@media (max-width: 500px) {
+  .navigation {
+    position: fixed;
+    top: 0px;
+    opacity: 0.6;
+    transition-duration: 10s;
+  }
+  .navigation:hover {
+    opacity: 1;
+    transition-duration: 0.5s;
+  }
+}
 footer {
   color: #22283B;
   background: #f4f4f4;
@@ -208,6 +220,11 @@ footer {
 }
 .home .intro .banner-img {
   width: 100%;
+}
+@media (max-width: 500px) {
+  .home .intro .banner-img {
+    margin-top: 86px;
+  }
 }
 .home .intro h2 {
   padding: 15px;
