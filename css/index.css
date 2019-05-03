@@ -200,7 +200,8 @@ p {
   .navigation {
     position: fixed;
     top: 0px;
-    opacity: 0.6;
+    opacity: 1;
+    opacity: 0.7;
     transition-duration: 10s;
   }
   .navigation:hover {
@@ -338,4 +339,58 @@ footer {
   width: 100%;
   height: auto;
   border-radius: 10px;
+}
+.form-sheet form {
+  width: 90%;
+  display: flex;
+  flex-flow: column nowrap;
+  margin-top: 20px;
+  font-family: 'Ubuntu', sans-serif;
+}
+.form-sheet form .input-section {
+  margin: 10px 10px 10px 10px;
+  font-family: 'Ubuntu', sans-serif;
+}
+.form-sheet form .input-section label {
+  font-family: 'Ubuntu', sans-serif;
+  margin: 10px 10px 10px 10px;
+  font-size: 16px;
+}
+.form-sheet form .input-section input {
+  width: 30%;
+  min-width: 200px;
+  border-color: #dee2e6;
+}
+.form-sheet form .input-section textarea {
+  width: 50%;
+  min-width: 300px;
+  height: 100px;
+  vertical-align: top;
+}
+.form-sheet .btn {
+  margin: 10px 0px 40px 20px;
+}
+.form-sheet .btn button {
+  height: 30px;
+  width: 200px;
+  font-size: 14px;
+  font-family: 'Ubuntu', sans-serif;
+  background-color: #23293B;
+  color: #F6F6F6;
+  border-radius: 5px;
+}
+.form-sheet .btn button:hover {
+  color: #23293B;
+  background-color: #F6F6F6;
+  transition-duration: 0.3s;
+}
+@media (max-width: 500px) {
+  .form-sheet {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+  }
+  .form-sheet .btn {
+    margin: 10px auto;
+  }
 }
