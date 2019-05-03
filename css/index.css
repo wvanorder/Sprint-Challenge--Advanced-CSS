@@ -394,3 +394,8 @@ footer {
     margin: 10px auto;
   }
 }
+@media (max-width: 500px) {
+  .form-intro .banner-img {
+    margin-top: 86px;
+  }
+}
