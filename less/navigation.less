@@ -1,1 +1,35 @@
 // Navigation code here
+.navigation {
+    background-color: @wild-sand;
+    .desktop-width();
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+
+    h1 {
+        font-size: 48px;
+        a{
+            .link-bland();
+        }   
+        margin-bottom: 15px;     
+    }
+
+    nav {
+        width: 100%;
+        max-width: 600px;
+        margin: 0 auto;
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: space-evenly;
+margin-bottom: 5px;
+        a{
+            .link-bland();
+            font-size: 18px;
+            &:hover {
+                color: @ebony-clay;
+                font-size: 24px;
+                transition-duration: 0.3s;
+            }
+        }
+    }
+}
