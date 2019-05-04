@@ -1,0 +1,401 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+* {
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+}
+html,
+body {
+  font-family: 'Ubuntu', sans-serif;
+  color: #5E6164;
+}
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: 'Russo One', sans-serif;
+  color: #23293B;
+}
+h2 {
+  font-size: 3.2rem;
+}
+h3 {
+  font-size: 2.8rem;
+}
+p {
+  font-size: 1.6rem;
+  line-height: 1.4;
+}
+.container {
+  max-width: 800px;
+  width: 100%;
+  margin: 0 auto;
+}
+.navigation {
+  background-color: #F6F6F6;
+  max-width: 800px;
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+}
+.navigation h1 {
+  font-size: 48px;
+  margin-bottom: 15px;
+}
+.navigation h1 a {
+  text-decoration: none;
+  color: #454A59;
+}
+.navigation nav {
+  width: 100%;
+  max-width: 600px;
+  margin: 0 auto;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-evenly;
+  margin-bottom: 5px;
+}
+.navigation nav a {
+  text-decoration: none;
+  color: #454A59;
+  font-size: 18px;
+}
+.navigation nav a:hover {
+  color: #23293B;
+  font-size: 24px;
+  transition-duration: 0.3s;
+}
+@media (max-width: 500px) {
+  .navigation {
+    position: fixed;
+    top: 0px;
+    opacity: 1;
+    opacity: 0.7;
+    transition-duration: 10s;
+  }
+  .navigation:hover {
+    opacity: 1;
+    transition-duration: 0.5s;
+  }
+}
+footer {
+  color: #22283B;
+  background: #f4f4f4;
+  padding: 20px 0;
+  border: 1px double #e0e0e0;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.home .intro .banner-img {
+  width: 100%;
+}
+@media (max-width: 500px) {
+  .home .intro .banner-img {
+    margin-top: 86px;
+  }
+}
+.home .intro h2 {
+  padding: 15px;
+}
+.home .intro p {
+  padding: 0 15px;
+}
+.home .space-images {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+}
+.home .space-images img {
+  width: 28%;
+  margin: 20px 2.5%;
+  border-radius: 20px;
+  height: 100%;
+}
+@media (max-width: 500px) {
+  .home .space-images {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 440px;
+    overflow: hidden;
+  }
+  .home .space-images img {
+    width: 400px;
+    height: 400px;
+    border-radius: 20px;
+  }
+}
+.home .visit-planets {
+  padding: 15px;
+}
+.home .visit-planets h3 {
+  margin-top: 11px;
+}
+.home .visit-planets p {
+  margin-top: 13px;
+}
+.home .walk {
+  margin-top: 30px;
+  border-top: 1px solid #dee2e6;
+  padding: 50px 60px;
+  display: flex;
+  justify-content: center;
+}
+.home .walk .walk-text {
+  width: 50%;
+}
+.home .walk .walk-text h3 {
+  margin-bottom: 10px;
+}
+.home .walk .walk-text p {
+  margin-bottom: 15px;
+}
+.home .walk .walk-text .btn a button {
+  height: 40px;
+  width: 40%;
+  font-size: 16px;
+  font-family: 'Ubuntu', sans-serif;
+  background-color: #23293B;
+  color: #F6F6F6;
+  border-radius: 10px;
+}
+.home .walk .walk-text .btn a button:hover {
+  color: #23293B;
+  background-color: #F6F6F6;
+  transition-duration: 0.3s;
+}
+@media (max-width: 500px) {
+  .home .walk {
+    display: flex;
+    flex-flow: column-reverse nowrap;
+    align-items: center;
+    padding: 20px 20px;
+  }
+  .home .walk .walk-text {
+    width: 95%;
+  }
+  .home .walk .walk-text h3 {
+    margin-bottom: 10px;
+  }
+  .home .walk .walk-text p {
+    margin-bottom: 15px;
+  }
+  .home .walk .walk-text .btn {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: stretch;
+  }
+  .home .walk .walk-text .btn a button {
+    width: 99%;
+  }
+  .home .walk .walk-img {
+    width: 95%;
+  }
+  .home .walk .walk-img img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 15px;
+  }
+}
+.home .walk-img {
+  width: 46%;
+  margin-left: 4%;
+}
+.home .walk-img img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+.form-sheet form {
+  width: 90%;
+  display: flex;
+  flex-flow: column nowrap;
+  margin-top: 20px;
+  font-family: 'Ubuntu', sans-serif;
+}
+.form-sheet form .input-section {
+  margin: 10px 10px 10px 10px;
+  font-family: 'Ubuntu', sans-serif;
+}
+.form-sheet form .input-section label {
+  font-family: 'Ubuntu', sans-serif;
+  margin: 10px 10px 10px 10px;
+  font-size: 16px;
+}
+.form-sheet form .input-section input {
+  width: 30%;
+  min-width: 200px;
+  border-color: #dee2e6;
+}
+.form-sheet form .input-section textarea {
+  width: 50%;
+  min-width: 300px;
+  height: 100px;
+  vertical-align: top;
+}
+.form-sheet .btn {
+  margin: 10px 0px 40px 20px;
+}
+.form-sheet .btn button {
+  height: 30px;
+  width: 200px;
+  font-size: 14px;
+  font-family: 'Ubuntu', sans-serif;
+  background-color: #23293B;
+  color: #F6F6F6;
+  border-radius: 5px;
+}
+.form-sheet .btn button:hover {
+  color: #23293B;
+  background-color: #F6F6F6;
+  transition-duration: 0.3s;
+}
+@media (max-width: 500px) {
+  .form-sheet {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+  }
+  .form-sheet .btn {
+    margin: 10px auto;
+  }
+}
+@media (max-width: 500px) {
+  .form-intro .banner-img {
+    margin-top: 86px;
+  }
+}

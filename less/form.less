@@ -1,0 +1,61 @@
+.form-sheet {
+form {
+    width: 90%;
+    display: flex;
+    flex-flow: column nowrap;
+    margin-top: 20px;
+    font-family: 'Ubuntu', sans-serif;
+
+    
+    .input-section {
+        margin: 10px 10px 10px 10px;
+        font-family: 'Ubuntu', sans-serif;
+        label  {
+            font-family: 'Ubuntu', sans-serif;
+            margin: 10px 10px 10px 10px;
+            font-size: 16px;
+        }
+
+        input {
+width: 30%;
+min-width: 200px;
+border-color: @border-real;
+        }
+
+        textarea {
+            width: 50%;
+            min-width: 300px;
+            height: 100px;
+            vertical-align: top;
+
+        }
+    
+    }
+}
+
+
+.btn {
+    .button-maker(30px, 200px, 14px, 5px);
+    margin: 10px 0px 40px 20px;
+}
+
+@media @mobile {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+
+    .btn {
+        margin: 10px auto;
+    }
+}
+
+}
+
+@media @mobile {
+    .form-intro{
+        .banner-img {
+            margin-top: 86px;
+        }
+    }
+    
+  }

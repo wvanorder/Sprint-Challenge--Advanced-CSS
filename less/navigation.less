@@ -1,1 +1,47 @@
 // Navigation code here
+.navigation {
+    margin: 0 auto;
+    background-color: @wild-sand;
+    .desktop-width();
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+
+    h1 {
+        font-size: 48px;
+        a{
+            .link-bland();
+        }   
+        margin-bottom: 15px;     
+    }
+
+    nav {
+        width: 100%;
+        max-width: 600px;
+        margin: 0 auto;
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: space-evenly;
+margin-bottom: 5px;
+        a{
+            .link-bland();
+            font-size: 18px;
+            &:hover {
+                color: @ebony-clay;
+                font-size: 24px;
+                transition-duration: 0.3s;
+            }
+        }
+    }
+@media @mobile {
+    position: fixed;
+    top:0px;
+    opacity: 1;
+    opacity: .7;
+    transition-duration: 10s;
+    &:hover{
+        opacity: 1;
+        transition-duration: 0.5s;
+    }
+}
+}
